@@ -1,0 +1,632 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&family=Inter&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background: #f7f7f8;
+}
+
+.container {
+  width: calc(100% - 120px);
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#btn-1 {
+  background-color: white;
+  border: 1px solid white;
+  font-size: 18px;
+  font-weight: 400;
+  color: #262626;
+  padding: 14px 34px;
+}
+
+#btn-2 {
+  color: #fff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  border-radius: 8px;
+  background: #ff9500;
+  border: 1px solid #ff9500;
+  padding: 14px 34px;
+}
+
+@media screen and (max-width: 320px) {
+  .brands img {
+    width: calc((100% - 24px) / 3);
+  }
+}
+
+/* Global Section Done */
+
+header {
+  padding: 20px 132px 24px 132px;
+}
+
+header .logo img {
+  background-color: #ff9500;
+  border-radius: 5px;
+}
+
+header .list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+}
+
+header .left-side {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+header .list a {
+  color: #262626;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+header .list .active {
+  border-radius: 8px;
+  background: #f1f1f3;
+  padding: 14px 24px;
+}
+
+header .right-side .log {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Header Done */
+
+section1 {
+  padding: 40px;
+}
+
+section1 .contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+section1 .contents .content-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+section1 .contents h3 {
+  color: #1a1a1a;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+section1 .contents h3 span {
+  color: #ff9500;
+}
+
+section1 .content-1 img {
+  border-radius: 6px;
+  background: #fff4e5;
+  padding: 14px;
+}
+
+section1 .contents p:first-of-type {
+  color: #262626;
+  text-align: center;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+section1 .contents p:last-of-type {
+  color: #262626;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+section1 .contents {
+  position: relative;
+}
+
+section1 .lines {
+  position: absolute;
+  left: 29%;
+  top: -35px;
+  color: #262626;
+}
+
+section1 .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+section2 {
+  border-radius: 12px;
+  border: 1px solid #f1f1f3;
+  background: #fcfcfd;
+}
+
+section2 .brands {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  overflow-x: auto;
+}
+
+.brands img {
+  width: calc((100% - 36px) / 4);
+}
+
+section2 .brands img {
+  padding: 30px 40px;
+  gap: 30px;
+}
+
+section3 .slider {
+  position: relative;
+}
+
+section3 .picture img {
+  display: flex;
+  width: 1596px;
+  height: 790px;
+  padding: 100px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+section3 .container .play img {
+  border-radius: 68px;
+  border: 6px solid rgba(0, 0, 0, 0.3);
+  background: rgba(8, 8, 8, 0.2);
+  padding: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+section4 .benefit {
+  border-radius: 12px;
+  background: #fff;
+  width: 31.5%;
+  height: 300px;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.benefit-info {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.benefits .benefit-info h3 {
+  color: #262626;
+  font-size: 48px;
+  font-weight: 600;
+  padding: 0px 55px;
+}
+
+.benefits .benefit-info p {
+  color: #59595a;
+  font-size: 18px;
+}
+
+section4 .benefits .benefit h1 {
+  color: #262626;
+  text-align: right;
+  font-size: 60px;
+  font-weight: 700;
+  padding: 20px 0;
+}
+
+section4 .benefits .benefit h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.144px;
+  padding: 20px 0;
+}
+
+section4 .line1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+section4 .line2 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+section4 .benefit img {
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background: #fcfcfd;
+}
+
+section4 .benefit .benefit-icon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.viewall #btn-view {
+  padding: 10px;
+  background-color: #fcfcfd;
+  border: 1px solid #f1f1f3;
+  color: #262626;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  margin-right: 70px;
+}
+
+.benefit-info {
+  padding: 20px;
+}
+
+.cources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+section5 .cources .cource img {
+  height: 400px;
+  width: 600px;
+  border-radius: 8px;
+  background: lightgray 50% / cover no-repeat;
+}
+
+.cource {
+  width: 35%;
+  border-radius: 12px;
+  border: 1px solid #f1f1f3;
+  background: #fff;
+}
+
+.cource .cource-contents {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  color: #4c4c4d;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 16px;
+}
+
+.cource .right-side {
+  color: #262626;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.left-side .right-side {
+  margin-left: 170px;
+}
+
+.cource-details h3 {
+  color: #262626;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  margin-top: 30px;
+}
+
+.cource-details p {
+  color: #4c4c4d;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#btn-get {
+  display: flex;
+  padding: 15px 250px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  gap: 8px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background: #f7f7f8;
+  color: #262626;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.testimonial {
+  background: #fcfcfd;
+  padding: 30px 50px;
+  width: 45%;
+}
+
+.testimonials .testimonial .profile img {
+  width: 100px;
+  height: 60px;
+  border-radius: 8px;
+  background: lightgray 50% / cover no-repeat;
+  margin: 50px;
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.profile a {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#btn-read {
+  display: flex;
+  padding: 18px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: #262626;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid #f1f1f3;
+  background: #f7f7f8;
+}
+
+.testimonial p {
+  display: flex;
+  padding: 50px;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.footer .left .logo {
+  background-color: #ff9500;
+  border-radius: 5px;
+}
+
+.footer .left .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.icons a {
+  color: #262626;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.icons img {
+  width: 24px;
+  height: 24px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+footer .footer-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: calc((100% - 90px) / 3);
+}
+
+.footer-item nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.left,
+.right {
+  width: calc((100% - 40px) / 2);
+}
+
+.footer .row {
+  gap: 40px;
+}
+
+.footer {
+  display: flex;
+  width: 1920px;
+  padding: 100px 162px 30px 162px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+  background-color: #fff;
+}
+
+.right {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#Social {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+}
+section7 .pricing {
+  background-color: #fff;
+}
+section7 .benefit-info {
+  margin-bottom: 80px;
+}
+
+.price .plan {
+  display: flex;
+  padding: 50px 30px 30px 30px;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  flex: 1 0 0;
+  border-radius: 12px;
+  border: 1px solid #f1f1f3;
+  background: #fcfcfd;
+}
+
+.price .num {
+  color: #262626;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.plan span {
+  color: #262626;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.price ul li {
+  display: flex;
+  padding: 6px;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.price ul li img {
+  padding: 6px;
+  border-radius: 6px;
+  background: #fff4e5;
+}
+
+.price ul {
+  display: flex;
+  padding: 0px 30px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.price #btn-2 {
+  display: flex;
+  padding: 20px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.price {
+  display: flex;
+  padding: 80px;
+  align-items: flex-start;
+  gap: 30px;
+  align-self: stretch;
+  border-radius: 12px;
+  background: #fff;
+}
+
+.plan h2 {
+  display: flex;
+  padding: 12px 22px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 6px;
+  border: 1px solid #ffeacc;
+  background: #fff9f0;
+}
+
+.pricing .viewall {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.hero,
+.brands,
+.slide,
+.benefits-section,
+.cources-section,
+.pricing,
+.testimonials-section {
+  margin-left: 300px;
+}
