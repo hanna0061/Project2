@@ -51,12 +51,6 @@ ul {
   padding: 14px 34px;
 }
 
-@media screen and (max-width: 320px) {
-  .brands img {
-    width: calc((100% - 24px) / 3);
-  }
-}
-
 /* Global Section Done */
 
 header {
@@ -101,7 +95,10 @@ header .right-side .log {
   align-items: center;
   gap: 30px;
 }
-
+@media screen and (max-width:900px) {
+  header .list {
+display: none;  }
+}
 /* Header Done */
 
 section1 {
@@ -183,22 +180,32 @@ section2 {
 
 section2 .brands {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding: 30px 40px;
+  gap:12px;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   overflow-x: auto;
-}
-
-.brands img {
-  width: calc((100% - 36px) / 4);
 }
 
 section2 .brands img {
   padding: 30px 40px;
   gap: 30px;
+  width: calc( ( 100% - 48px) / 4);
 }
+
+@media screen and (max-width:900px) {
+  section2 .brands img {
+    width: calc( ( 100% - 36px) / 3);
+  }
+}
+
+@media screen and (max-width:500px) {
+  section2 .brands img {
+    width: calc( ( 100% - 12px) / 2);
+  }
+}
+
 
 section3 .slider {
   position: relative;
@@ -272,13 +279,15 @@ section4 .line1 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding: 30px;
+  padding: 40px;
 }
 
 section4 .line2 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  padding: 40px;
+
 }
 
 section4 .benefit img {
@@ -314,6 +323,16 @@ section4 .benefit .benefit-icon {
   gap: 50px;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  
+}
+
+@media screen and (min-width:320px) and (max-width:1707px) {
+  section4 .benefits .benefit {
+width: 200%;
+height: 200%;
+padding: 60px;
+}
 }
 
 section5 .cources .cource img {
@@ -324,7 +343,7 @@ section5 .cources .cource img {
 }
 
 .cource {
-  width: 35%;
+  width: 32%;
   border-radius: 12px;
   border: 1px solid #f1f1f3;
   background: #fff;
@@ -363,6 +382,17 @@ section5 .cources .cource img {
   color: #4c4c4d;
   font-size: 18px;
   font-weight: 400;
+}
+
+@media screen and (min-width:320px) and (max-width:1707px) {
+  
+section5 .cource{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+}
+  
 }
 
 .testimonials {
@@ -474,6 +504,7 @@ section5 .cources .cource img {
   margin-top: 100px;
 }
 
+
 footer .footer-right {
   display: flex;
   flex-wrap: wrap;
@@ -506,7 +537,7 @@ footer .footer-right {
 
 .footer {
   display: flex;
-  width: 1920px;
+  width: 100%;
   padding: 100px 162px 30px 162px;
   flex-direction: column;
   align-items: flex-start;
