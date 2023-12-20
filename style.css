@@ -323,9 +323,7 @@ section4 .benefit .benefit-icon {
   gap: 50px;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  
-}
+ }
 
 @media screen and (min-width:320px) and (max-width:1707px) {
   section4 .benefits .benefit {
@@ -343,10 +341,17 @@ section5 .cources .cource img {
 }
 
 .cource {
-  width: 32%;
+  width: 100%;
+  display: flex;
   border-radius: 12px;
+  padding: 40px;
   border: 1px solid #f1f1f3;
   background: #fff;
+  flex: 1 0 0;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .cource .cource-contents {
@@ -560,6 +565,17 @@ footer .footer-right {
   flex-wrap: wrap;
 }
 
+footer p{
+  align-self: stretch;
+  color: #656567;
+text-align: center;
+font-size: 18px;
+font-weight: 400;
+margin-top: 100px;
+padding-left: 50px;
+border-top: 1px solid #F1F1F3;
+}
+
 @media screen and (min-width:320px) and (max-width:1707px) {
   .right{
     gap:30px
@@ -669,6 +685,9 @@ section7 .benefit-info {
   align-items: center;
   border-radius: 8px;
   background: #fff;
+}
+.card{
+  background-color: #FFF;
 }
 
 @media screen and (min-width:320px) and (max-width:1707px) {
