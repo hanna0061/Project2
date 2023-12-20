@@ -433,6 +433,15 @@ section5 .cource{
   margin: 50px;
 }
 
+@media screen and (min-width:320px) and (max-width:1707px) {
+  .testimonial {
+   display: flex;
+   flex-wrap: wrap;
+   width: 200%;
+
+  }
+}
+
 .profile {
   display: flex;
   justify-content: center;
@@ -550,6 +559,14 @@ footer .footer-right {
   flex-wrap: wrap;
 }
 
+@media screen and (min-width:320px) and (max-width:1707px) {
+  .right{
+    gap:30px
+}
+}
+
+
+
 #Social {
   display: flex;
   justify-content: center;
@@ -566,6 +583,7 @@ section7 .benefit-info {
 
 .price .plan {
   display: flex;
+  flex-wrap: wrap;
   padding: 50px 30px 30px 30px;
   flex-direction: column;
   align-items: center;
@@ -650,6 +668,15 @@ section7 .benefit-info {
   align-items: center;
   border-radius: 8px;
   background: #fff;
+}
+
+@media screen and (min-width:320px) and (max-width:1707px) {
+  .price{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 200%;
+}
 }
 
 .hero,
