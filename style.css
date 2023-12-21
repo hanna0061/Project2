@@ -96,9 +96,38 @@ header .right-side .log {
   gap: 30px;
 }
 @media screen and (max-width:900px) {
-  header .list {
+  header .list , header .right-side {
 display: none;  }
 }
+
+@media screen and (min-width:320px) and (max-width:1707px) {
+  .container{
+    width: 100%;
+    margin: auto;
+  }
+  }
+
+  .burger .bur {
+    background: black;
+    color: #1a1a1a;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .burger .bur:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .burger .active {
+    background-color: #04AA6D;
+    color: white;
+  }
+ 
 /* Header Done */
 
 section1 {
@@ -388,7 +417,6 @@ section5 .cources .cource img {
 }
 
 @media screen and (min-width:320px) and (max-width:1707px) {
-
 section5 .cource{
   display: flex;
   flex-wrap: wrap;
@@ -467,7 +495,7 @@ padding: 24px;
  @media screen and (min-width:320px) and (max-width:1707px) {
   .testimonials  {
    gap:15px;
-   width:500%;
+   width:350%;
    padding: 30px;
   }
  }
@@ -598,8 +626,8 @@ footer .footer-right {
 }
 
 footer p{
-  align-self: stretch;
-  color: #656567;
+align-self: stretch;
+color: #656567;
 text-align: center;
 font-size: 18px;
 font-weight: 400;
@@ -612,7 +640,7 @@ padding-top: 60px;
 @media screen and (min-width:320px) and (max-width:1707px) {
   .right{
     gap:30px
-}
+  }
 }
 
 
@@ -719,6 +747,7 @@ section7 .benefit-info {
   border-radius: 8px;
   background: #fff;
 }
+
 .card{
   background-color: #fff;
   padding: 50px;
@@ -740,13 +769,11 @@ section7 .benefit-info {
 }
 }
 
-.hero,
-.brands,
-.slide,
-.benefits-section,
-.cources-section,
-.pricing,
-.testimonials-section {
-  margin-left: 300px;
-}
-
+@media screen and (min-width:320px) and (max-width:1707px) {
+  .benefits .row{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+  }
+ }
