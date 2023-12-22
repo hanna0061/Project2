@@ -107,6 +107,18 @@ display: none;  }
   }
   }
 
+  
+@media screen and (min-width:320px) and (max-width:1707px) {
+.benefit-info{
+  display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+align-self: stretch;
+}
+  }
+
+
   .burger .bur {
     background: black;
     color: #1a1a1a;
@@ -639,7 +651,7 @@ padding-top: 60px;
 
 @media screen and (min-width:320px) and (max-width:1707px) {
   .right{
-    gap:30px
+    gap:30px;
   }
 }
 
